@@ -97,7 +97,8 @@
                     price: this.price
                 }).then(response => {
                     alert(response.data.message)
-                    this.products.push(response.data.product)
+                    // this.products.push(response.data.product)
+                    this.fetchProducts()
                 })
             },
             fetchProducts(){
